@@ -214,6 +214,29 @@
   .step h4{ margin:0 0 6px; font-size:0.98rem; }
   .step p{ margin:0; font-size:0.86rem; color:var(--ink-soft); }
 
+  /* ---------- TESTIMONIALS ---------- */
+  .testimonials{ padding:16px 0 64px; }
+  .testimonial-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:26px; }
+  .testimonial-card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:24px 22px;
+  }
+  .quack-rating{ font-size:0.95rem; margin-bottom:12px; letter-spacing:2px; }
+  .testimonial-card p.quote{
+    font-family:'Lora', serif;
+    font-style:italic;
+    font-size:0.96rem;
+    color:var(--ink);
+    margin:0 0 16px;
+  }
+  .testimonial-card .author{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.76rem;
+    color:var(--ink-soft);
+  }
+  
   /* ---------- PAYMENT ---------- */
   .payment{ padding:16px 0 64px; }
   .payment-panel{
@@ -481,6 +504,30 @@
         <h4>Thank the duck</h4>
         <p>It won't respond. It rarely does. That's fine.</p>
       </div>
+    </div>
+  </section>
+
+    <section class="testimonials">
+    <div class="section-head">
+      <h2>What patients are saying</h2>
+      <p>Unsolicited feedback from developers who talked to a duck and, against all odds, it worked.</p>
+    </div>
+    <div class="testimonial-grid">
+      <article class="testimonial-card">
+        <div class="quack-rating">🦆🦆🦆🦆🦆</div>
+        <p class="quote">"Explained the bug for six minutes. Fixed it in the seventh. The duck did not move once."</p>
+        <div class="author">— Anonymous, Senior Backend Engineer</div>
+      </article>
+      <article class="testimonial-card">
+        <div class="quack-rating">🦆🦆🦆🦆🦆</div>
+        <p class="quote">"I have never heard Dr. Waddleworth speak, and I still leave every session understanding my own code better."</p>
+        <div class="author">— Anonymous, Frontend Developer</div>
+      </article>
+      <article class="testimonial-card">
+        <div class="quack-rating">🦆🦆🦆🦆</div>
+        <p class="quote">"Booked an emergency session at 2am. Dr. Duckins didn't even blink. Neither did I, eventually."</p>
+        <div class="author">— Anonymous, DevOps Engineer</div>
+      </article>
     </div>
   </section>
 
